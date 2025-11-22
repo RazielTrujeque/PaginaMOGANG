@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MO GANG: MUSIC, DESIGN & PRODUCTION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuración de colores de MO GANG
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mo-primary': '#FF3B5B', // Rojo/Rosa vibrante
+                        'mo-dark': '#1A1A1A', // Fondo oscuro
+                        'mo-light': '#F5F5F5', // Texto claro
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-mo-dark text-mo-light font-sans scroll-smooth">
+
+    <header class="sticky top-0 z-50 bg-mo-dark bg-opacity-95 shadow-lg shadow-black/50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-black text-mo-primary tracking-widest">MO GANG</h1>
+            <div class="space-x-8 hidden md:flex">
+                <a href="#music" class="hover:text-mo-primary transition duration-300">Música</a>
+                <a href="#services" class="hover:text-mo-primary transition duration-300">Servicios</a>
+                <a href="#contact" class="hover:text-mo-primary transition duration-300">Contacto</a>
+                <a href="#" class="text-white font-bold hover:text-mo-primary transition duration-300">Tienda (Futuro)</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none text-mo-primary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+             <a href="#music" class="block px-4 py-2 hover:bg-mo-primary/20 transition duration-150">Música</a>
+             <a href="#services" class="block px-4 py-2 hover:bg-mo-primary/20 transition duration-150">Servicios</a>
+             <a href="#contact" class="block px-4 py-2 hover:bg-mo-primary/20 transition duration-150">Contacto</a>
+             <a href="#" class="block px-4 py-2 text-mo-primary font-bold hover:bg-mo-primary/20 transition duration-150">Tienda (Futuro)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-[90vh] flex items-center justify-center overflow-hidden border-b-4 border-mo-primary/50">
+            <div class="absolute inset-0 bg-[url('placeholder-hero.jpg')] bg-cover bg-center opacity-30 animate-pulse-slow"></div>
+            
+            <div class="relative z-10 text-center p-6 bg-mo-dark/70 backdrop-blur-sm rounded-xl border border-mo-primary/20">
+                <h2 class="text-7xl sm:text-9xl font-black uppercase leading-none text-white tracking-tighter drop-shadow-lg">MO GANG</h2>
+                <p class="text-3xl sm:text-5xl mt-4 font-light text-mo-primary tracking-wide">MUSIC, DESIGN & PRODUCTION</p>
+                <a href="#services" class="mt-10 inline-block bg-mo-primary text-white font-bold py-4 px-10 rounded-full hover:bg-mo-light hover:text-mo-dark transition duration-300 transform hover:scale-105 shadow-xl shadow-mo-primary/40">
+                    ¡Hablemos de tu proyecto!
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-[#141414]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-5xl font-extrabold text-center text-white mb-16 border-b-4 border-mo-primary/50 pb-2 inline-block">NUESTROS SERVICIOS</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-mo-dark p-8 rounded-2xl shadow-2xl border border-mo-primary/30 transform hover:scale-[1.03] transition duration-300 hover:shadow-mo-primary/50">
+                        <div class="text-mo-primary mb-5"><svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14c0 1.65-1.35 3-3 3s-3-1.35-3-3v-4H9v4c0 1.65-1.35 3-3 3s-3-1.35-3-3v-4h14v1c0 1.65-1.35 3-3 3s-3-1.35-3-3v-4z"></path></svg></div>
+                        <h4 class="text-3xl font-bold text-white mb-3">PRODUCCIÓN MUSICAL</h4>
+                        <p class="text-mo-light/80 mb-6">Creamos el sonido audaz y pulido que tu marca necesita. Beats, mezcla y mastering profesional (Rap/Reggaeton).</p>
+                        <a href="#contact" class="inline-block text-mo-primary font-bold hover:underline">¡Pide tu Beat! →</a>
+                    </div>
+                    
+                    <div class="bg-mo-dark p-8 rounded-2xl shadow-2xl border border-mo-primary/30 transform hover:scale-[1.03] transition duration-300 hover:shadow-mo-primary/50">
+                         <div class="text-mo-primary mb-5"><svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.53 16.122C10.66 16.88 11 17.766 11 19c0 1.3-.34 2.12-1.47 2.878-1.13.76-2.61.76-3.74 0-1.13-.76-1.47-1.58-1.47-2.878 0-1.23.34-2.12 1.47-2.878 1.13-.76 2.61-.76 3.74 0zM12 2v20"></path></svg></div>
+                        <h4 class="text-3xl font-bold text-white mb-3">DISEÑO GRÁFICO</h4>
+                        <p class="text-mo-light/80 mb-6">Portadas de alto impacto, branding completo para artistas, logotipos y materiales visuales.</p>
+                        <a href="#contact" class="inline-block text-mo-primary font-bold hover:underline">Ver Portafolio →</a>
+                    </div>
+                    
+                    <div class="bg-mo-dark p-8 rounded-2xl shadow-2xl border border-mo-primary/30 transform hover:scale-[1.03] transition duration-300 hover:shadow-mo-primary/50">
+                         <div class="text-mo-primary mb-5"><svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657m6.727-8.138a2.5 2.5 0 100-3.536 2.5 2.5 0 000 3.536z"></path></svg></div>
+                        <h4 class="text-3xl font-bold text-white mb-3">MANAGEMENT & BOOKING</h4>
+                        <p class="text-mo-light/80 mb-6">Agenda de eventos, gestión de contratos y coordinación de conciertos. Lleva tu show al siguiente nivel.</p>
+                        <a href="#contact" class="inline-block text-mo-primary font-bold hover:underline">Agendar Consulta →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="py-24 bg-mo-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-5xl font-extrabold text-center text-white mb-16">MÚSICA RECIENTE</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#242424] p-5 rounded-xl transition duration-300 hover:bg-[#303030]">
+                        <img src="album-cover-1.jpg" alt="Portada de Álbum 1" class="w-full h-auto rounded-lg mb-4 aspect-square object-cover shadow-lg">
+                        <h5 class="text-2xl font-bold text-mo-primary">TRACK NAME (ft. Artista)</h5>
+                        <p class="text-sm text-mo-light/70 mb-4">Rap / Reggaeton | Lanzamiento 2025</p>
+                        <div class="flex space-x-4">
+                             <a href="#" class="text-white hover:text-mo-primary transition duration-300" target="_blank">
+                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                             </a>
+                             <a href="#" class="text-white hover:text-mo-primary transition duration-300" target="_blank">
+                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10.42 1.48c-.96.06-1.92.19-2.83.39-1.39.29-2.6.93-3.6 1.87-.97.94-1.63 2.08-2.02 3.33-.24.78-.39 1.6-.47 2.45v6.52c.08.85.23 1.67.47 2.45.39 1.25 1.05 2.39 2.02 3.33 1.05 1.02 2.35 1.67 3.78 1.93 1.63.26 3.32.26 4.95 0 1.43-.26 2.73-.91 3.78-1.93.97-.94 1.63-2.08 2.02-3.33.24-.78.39-1.6.47-2.45V9.41c-.08-.85-.23-1.67-.47-2.45-.39-1.25-1.05-2.39-2.02-3.33-1.05-1.02-2.35-1.67-3.78-1.93-1.63-.26-3.32-.26-4.95 0zM12 17.5c-3.03 0-5.5-2.47-5.5-5.5s2.47-5.5 5.5-5.5 5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5zM12 7.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"/></svg>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#242424] p-5 rounded-xl transition duration-300 hover:bg-[#303030]"><p class="text-white">Pista 2 (Similar a Pista 1)</p></div>
+                    <div class="bg-[#242424] p-5 rounded-xl transition duration-300 hover:bg-[#303030]"><p class="text-white">Pista 3 (Similar a Pista 1)</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-black">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-5xl font-extrabold text-center text-mo-primary mb-12">TRABAJEMOS JUNTOS</h3>
+
+                <div class="bg-mo-dark p-8 md:p-12 rounded-2xl shadow-[0_0_80px_rgba(255,59,91,0.2)] border border-mo-primary/50">
+                    <h4 class="text-3xl font-semibold text-white mb-6">Cuéntanos sobre tu proyecto</h4>
+                    
+                    <form action="procesar_contacto.php" method="POST" class="space-y-6">
+                        <div>
+                            <label for="nombre" class="block text-sm font-medium text-mo-light mb-1">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full p-3 rounded-lg bg-[#2a2a2a] border border-mo-light/10 focus:border-mo-primary focus:ring-1 focus:ring-mo-primary text-white placeholder-mo-light/50 transition duration-300" placeholder="Tu nombre o el de tu proyecto" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-mo-light mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-[#2a2a2a] border border-mo-light/10 focus:border-mo-primary focus:ring-1 focus:ring-mo-primary text-white placeholder-mo-light/50 transition duration-300" placeholder="tu.email@ejemplo.com" required>
+                        </div>
+                        
+                        <div>
+                            <label for="servicio" class="block text-sm font-medium text-mo-light mb-1">Interesado en</label>
+                            <select id="servicio" name="servicio" class="w-full p-3 rounded-lg bg-[#2a2a2a] border border-mo-light/10 focus:border-mo-primary focus:ring-1 focus:ring-mo-primary text-white appearance-none" required>
+                                <option value="" disabled selected>Selecciona un servicio...</option>
+                                <option value="ProduccionMusical">Producción Musical</option>
+                                <option value="DisenoGrafico">Diseño Gráfico (Portadas/Branding)</option>
+                                <option value="Booking">Booking y Management</option>
+                                <option value="Otro">Otro / Colaboración</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-mo-light mb-1">Descripción del Proyecto</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="w-full p-3 rounded-lg bg-[#2a2a2a] border border-mo-light/10 focus:border-mo-primary focus:ring-1 focus:ring-mo-primary text-white placeholder-mo-light/50 transition duration-300" placeholder="¿Qué estás buscando? Sé lo más detallado posible." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-mo-primary text-white font-bold py-4 rounded-lg hover:bg-white hover:text-mo-dark transition duration-300 transform hover:scale-[1.005] shadow-lg shadow-mo-primary/50 text-xl">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-10 border-t border-mo-primary/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" target="_blank" class="text-mo-light hover:text-mo-primary transition duration-300">Instagram</a>
+                <a href="#" target="_blank" class="text-mo-light hover:text-mo-primary transition duration-300">Spotify</a>
+                <a href="#" target="_blank" class="text-mo-light hover:text-mo-primary transition duration-300">YouTube</a>
+            </div>
+            <p class="text-sm text-mo-light/50">&copy; 2025 MO GANG. Todos los derechos reservados. | Desarrollado con energía.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
