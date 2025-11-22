@@ -38,14 +38,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 6. Envío del correo y redirección
     if (mail($to, $subject, $email_body, $headers)) {
-        header('Location: /gracias.html'); // Éxito
+        header('Location: gracias.html'); // Éxito
         exit;
     } else {
-        header('Location: /error_envio.html'); // Falla
+        header('Location: error_envio.html'); // Falla
         exit;
     }
 } else {
-    header('Location: /index.html');
+    header('Location: index.html');
     exit;
 }
 ?>
